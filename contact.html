@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact CCMO — Get in touch with the Coalition for Conflict Mitigation Organization in Juba, South Sudan.">
+    <title>Contact — CCMO | Get in Touch · Offices · Inquiries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="announce">
+        <div class="announce-track">
+            <div class="announce-item"><span class="dot"></span>Registered NGO · REG NO 5759</div>
+            <div class="announce-item"><span class="dot"></span>Operating across 7 states in South Sudan</div>
+            <div class="announce-item"><span class="dot"></span>Founded 2022 · Juba Headquarters</div>
+            <div class="announce-item"><span class="dot"></span>Peace · Education · WASH · Protection</div>
+            <div class="announce-item"><span class="dot"></span>Registered NGO · REG NO 5759</div>
+            <div class="announce-item"><span class="dot"></span>Operating across 7 states in South Sudan</div>
+            <div class="announce-item"><span class="dot"></span>Founded 2022 · Juba Headquarters</div>
+            <div class="announce-item"><span class="dot"></span>Peace · Education · WASH · Protection</div>
+        </div>
+    </div>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo"><div class="logo-mark">C</div><div class="logo-text"><strong>CCMO</strong><span>Coalition · Est. 2022</span></div></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <a href="support.html" class="nav-cta"><i class="fas fa-heart"></i> Support Our Work</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <section class="page-hero page-hero-contact">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content container reveal">
+            <div class="section-label" style="color:var(--gold);">Get in Touch</div>
+            <h1>We'd love to <span class="italic">hear</span> from you.</h1>
+            <p class="page-hero-desc">Whether you want to partner, donate, volunteer, or simply learn more — reach out to us.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO + FORM -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid reveal">
+                <div class="contact-info-col">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info-item"><i class="fas fa-location-dot"></i><div><strong>Address</strong><span>Juba, Central Equatoria State<br>South Sudan</span></div></div>
+                    <div class="contact-info-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><span>info@ccmo.org</span></div></div>
+                    <div class="contact-info-item"><i class="fas fa-phone"></i><div><strong>Phone</strong><span>+211 922 333 444</span></div></div>
+                    <div class="contact-info-item"><i class="fas fa-clock"></i><div><strong>Working Hours</strong><span>Monday – Friday<br>8:00 AM – 5:00 PM (CAT)</span></div></div>
+                    <div class="contact-info-item"><i class="fas fa-id-card"></i><div><strong>Registration</strong><span>REG NO 5759 · RRC</span></div></div>
+                    <h4 style="margin-top:2rem;">Follow Us</h4>
+                    <div class="footer-social" style="margin-top:0.5rem;"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div>
+                </div>
+                <div class="contact-form-col">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Message Sent ✓';b.style.background='var(--gold)';setTimeout(()=>{b.textContent='Send Message';b.style.background='var(--forest)';this.reset();},3000);">
+                        <div class="form-row"><div class="form-group"><label>Full Name *</label><input type="text" required placeholder="Your full name"></div><div class="form-group"><label>Email *</label><input type="email" required placeholder="your@email.com"></div></div>
+                        <div class="form-row"><div class="form-group"><label>Phone</label><input type="tel" placeholder="+211 XXX XXX XXX"></div><div class="form-group"><label>Organization</label><input type="text" placeholder="Your organization (optional)"></div></div>
+                        <div class="form-group"><label>Subject *</label><select required><option value="">Select a subject</option><option>General Inquiry</option><option>Partnerships</option><option>Programs</option><option>Media & Communications</option><option>Donations</option><option>Volunteering</option></select></div>
+                        <div class="form-group"><label>Message *</label><textarea required placeholder="Tell us how we can help..." rows="5"></textarea></div>
+                        <button type="submit" class="btn btn-primary">Send Message<span class="arrow">→</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPARTMENT CONTACTS -->
+    <section class="section" style="background:var(--cream-warm);">
+        <div class="container">
+            <div class="section-head reveal"><div><div class="section-label">Department Contacts</div><h2 class="section-title">Reach the right <span class="italic">team</span>.</h2></div></div>
+            <div class="dept-grid reveal">
+                <div class="dept-card"><i class="fas fa-envelope"></i><h4>General Inquiries</h4><span>info@ccmo.org</span></div>
+                <div class="dept-card"><i class="fas fa-handshake"></i><h4>Partnerships</h4><span>partnerships@ccmo.org</span></div>
+                <div class="dept-card"><i class="fas fa-dove"></i><h4>Programs</h4><span>programs@ccmo.org</span></div>
+                <div class="dept-card"><i class="fas fa-newspaper"></i><h4>Media</h4><span>media@ccmo.org</span></div>
+                <div class="dept-card"><i class="fas fa-heart"></i><h4>Donations</h4><span>donate@ccmo.org</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-mark">C</div><div class="logo-text"><strong>CCMO</strong><span>Coalition · Est. 2022</span></div></a><p>Coalition for Conflict Mitigation Organization — building peace, delivering education, providing clean water, and transforming lives across South Sudan since 2022.</p><div class="footer-social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></div></div>
+                <div class="footer-col"><h4>Organization</h4><ul><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="education.html">Education</a></li><li><a href="impact.html">Our Impact</a></li><li><a href="stories.html">Stories</a></li></ul></div>
+                <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="support.html">Donate</a></li><li><a href="support.html">Partner</a></li><li><a href="support.html">Volunteer</a></li><li><a href="contact.html">Contact</a></li><li><a href="news.html">News</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><i class="fas fa-location-dot"></i><span>Juba, Central Equatoria State, South Sudan</span></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@ccmo.org</span></div><div class="footer-contact-item"><i class="fas fa-phone"></i><span>+211 922 333 444</span></div><div class="footer-contact-item"><i class="fas fa-id-card"></i><span>REG NO 5759 · RRC</span></div></div>
+            </div>
+            <div class="footer-bottom"><div>© 2026 Coalition for Conflict Mitigation Organization. All rights reserved.</div><div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Safeguarding</a></div></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
