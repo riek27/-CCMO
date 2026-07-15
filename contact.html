@@ -26,7 +26,9 @@
     </div>
     <nav id="navbar">
         <div class="nav-inner">
-            <a href="index.html" class="logo"><div class="logo-mark">C</div><div class="logo-text"><strong>CCMO</strong><span>Coalition · Est. 2022</span></div></a>
+            <a href="index.html" class="logo">
+                <img src="assets/ccmologo.jpeg" alt="CCMO – Coalition for Conflict Mitigation Organization">
+            </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -37,8 +39,8 @@
                 <li><a href="news.html">News</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
-            <a href="support.html" class="nav-cta"><i class="fas fa-heart"></i> Support Our Work</a>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+            <a href="support.html" class="nav-cta"><i class="fas fa-heart" aria-hidden="true"></i> Support Our Work</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
         </div>
     </nav>
 
@@ -51,59 +53,275 @@
         </div>
     </section>
 
-    <!-- CONTACT INFO + FORM -->
+    <!-- CONTACT INFO + FORM (Netlify-ready) -->
     <section class="section">
         <div class="container">
             <div class="contact-grid reveal">
+                <!-- Contact Info Column -->
                 <div class="contact-info-col">
                     <h3>Contact Information</h3>
-                    <div class="contact-info-item"><i class="fas fa-location-dot"></i><div><strong>Address</strong><span>Juba, Central Equatoria State<br>South Sudan</span></div></div>
-                    <div class="contact-info-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><span>info@ccmo.org</span></div></div>
-                    <div class="contact-info-item"><i class="fas fa-phone"></i><div><strong>Phone</strong><span>+211 922 333 444</span></div></div>
-                    <div class="contact-info-item"><i class="fas fa-clock"></i><div><strong>Working Hours</strong><span>Monday – Friday<br>8:00 AM – 5:00 PM (CAT)</span></div></div>
-                    <div class="contact-info-item"><i class="fas fa-id-card"></i><div><strong>Registration</strong><span>REG NO 5759 · RRC</span></div></div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-location-dot" aria-hidden="true"></i>
+                        <div><strong>Address</strong><span>Juba, Central Equatoria State<br>South Sudan</span></div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <div><strong>Email</strong><span>info@ccmo-ss.org</span></div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <div><strong>Phone</strong><span>+211 922 333 444</span></div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <div><strong>Working Hours</strong><span>Monday – Friday<br>8:00 AM – 5:00 PM (CAT)</span></div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-id-card" aria-hidden="true"></i>
+                        <div><strong>Registration</strong><span>REG NO 5759 · RRC</span></div>
+                    </div>
+
                     <h4 style="margin-top:2rem;">Follow Us</h4>
-                    <div class="footer-social" style="margin-top:0.5rem;"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div>
+                    <div class="footer-social" style="margin-top:0.5rem;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
                 </div>
+
+                <!-- Netlify Form Column -->
                 <div class="contact-form-col">
                     <h3>Send Us a Message</h3>
-                    <form class="contact-form" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Message Sent ✓';b.style.background='var(--gold)';setTimeout(()=>{b.textContent='Send Message';b.style.background='var(--forest)';this.reset();},3000);">
-                        <div class="form-row"><div class="form-group"><label>Full Name *</label><input type="text" required placeholder="Your full name"></div><div class="form-group"><label>Email *</label><input type="email" required placeholder="your@email.com"></div></div>
-                        <div class="form-row"><div class="form-group"><label>Phone</label><input type="tel" placeholder="+211 XXX XXX XXX"></div><div class="form-group"><label>Organization</label><input type="text" placeholder="Your organization (optional)"></div></div>
-                        <div class="form-group"><label>Subject *</label><select required><option value="">Select a subject</option><option>General Inquiry</option><option>Partnerships</option><option>Programs</option><option>Media & Communications</option><option>Donations</option><option>Volunteering</option></select></div>
-                        <div class="form-group"><label>Message *</label><textarea required placeholder="Tell us how we can help..." rows="5"></textarea></div>
-                        <button type="submit" class="btn btn-primary">Send Message<span class="arrow">→</span></button>
+
+                    <!-- Netlify Form -->
+                    <form
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        class="contact-form"
+                        id="contact-form"
+                    >
+                        <!-- Hidden fields required by Netlify -->
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <!-- Honeypot (anti-spam) -->
+                        <p class="hidden" style="display:none;">
+                            <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+                        </p>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullname">Full Name *</label>
+                                <input type="text" id="fullname" name="fullname" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+211 XXX XXX XXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="organization">Organization</label>
+                                <input type="text" id="organization" name="organization" placeholder="Your organization (optional)">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Partnerships">Partnerships</option>
+                                <option value="Programs">Programs</option>
+                                <option value="Media & Communications">Media & Communications</option>
+                                <option value="Donations">Donations</option>
+                                <option value="Volunteering">Volunteering</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us how we can help..." rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            Send Message <span class="arrow">→</span>
+                        </button>
+
+                        <!-- Success / Error feedback -->
+                        <div id="form-feedback" style="margin-top:1rem; font-weight:600;"></div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Netlify AJAX Submission Script -->
+    <script>
+        (function() {
+            const form = document.getElementById('contact-form');
+            const btn = document.getElementById('submit-btn');
+            const feedback = document.getElementById('form-feedback');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const originalText = btn.innerHTML;
+                btn.innerHTML = 'Sending…';
+                btn.disabled = true;
+                feedback.textContent = '';
+                feedback.style.color = '';
+
+                const formData = new FormData(form);
+
+                fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(formData).toString()
+                })
+                .then(response => {
+                    if (response.ok) {
+                        feedback.textContent = '✅ Message sent successfully! We’ll get back to you soon.';
+                        feedback.style.color = 'var(--gold)';
+                        form.reset();
+                        btn.innerHTML = 'Message Sent ✓';
+                        btn.style.background = 'var(--gold)';
+                    } else {
+                        throw new Error('Server responded with ' + response.status);
+                    }
+                })
+                .catch(error => {
+                    feedback.textContent = '❌ Oops! Something went wrong. Please try again or email us directly.';
+                    feedback.style.color = '#d9534f';
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    btn.style.background = '';
+                    console.error('Netlify form error:', error);
+                })
+                .finally(() => {
+                    if (btn.innerHTML === 'Message Sent ✓') {
+                        setTimeout(() => {
+                            btn.innerHTML = 'Send Message <span class="arrow">→</span>';
+                            btn.disabled = false;
+                            btn.style.background = '';
+                        }, 4000);
+                    }
+                });
+            });
+        })();
+    </script>
+
     <!-- DEPARTMENT CONTACTS -->
     <section class="section" style="background:var(--cream-warm);">
         <div class="container">
-            <div class="section-head reveal"><div><div class="section-label">Department Contacts</div><h2 class="section-title">Reach the right <span class="italic">team</span>.</h2></div></div>
+            <div class="section-head reveal">
+                <div>
+                    <div class="section-label">Department Contacts</div>
+                    <h2 class="section-title">Reach the right <span class="italic">team</span>.</h2>
+                </div>
+            </div>
             <div class="dept-grid reveal">
-                <div class="dept-card"><i class="fas fa-envelope"></i><h4>General Inquiries</h4><span>info@ccmo.org</span></div>
-                <div class="dept-card"><i class="fas fa-handshake"></i><h4>Partnerships</h4><span>partnerships@ccmo.org</span></div>
-                <div class="dept-card"><i class="fas fa-dove"></i><h4>Programs</h4><span>programs@ccmo.org</span></div>
-                <div class="dept-card"><i class="fas fa-newspaper"></i><h4>Media</h4><span>media@ccmo.org</span></div>
-                <div class="dept-card"><i class="fas fa-heart"></i><h4>Donations</h4><span>donate@ccmo.org</span></div>
+                <div class="dept-card">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <h4>General Inquiries</h4>
+                    <span>info@ccmo-ss.org</span>
+                </div>
+                <div class="dept-card">
+                    <i class="fas fa-handshake" aria-hidden="true"></i>
+                    <h4>Partnerships</h4>
+                    <span>partnerships@ccmo-ss.org</span>
+                </div>
+                <div class="dept-card">
+                    <i class="fas fa-dove" aria-hidden="true"></i>
+                    <h4>Programs</h4>
+                    <span>programs@ccmo-ss.org</span>
+                </div>
+                <div class="dept-card">
+                    <i class="fas fa-newspaper" aria-hidden="true"></i>
+                    <h4>Media</h4>
+                    <span>media@ccmo-ss.org</span>
+                </div>
+                <div class="dept-card">
+                    <i class="fas fa-heart" aria-hidden="true"></i>
+                    <h4>Donations</h4>
+                    <span>donate@ccmo-ss.org</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- FOOTER (updated with consistent email and accessibility) -->
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-top">
-                <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-mark">C</div><div class="logo-text"><strong>CCMO</strong><span>Coalition · Est. 2022</span></div></a><p>Coalition for Conflict Mitigation Organization — building peace, delivering education, providing clean water, and transforming lives across South Sudan since 2022.</p><div class="footer-social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></div></div>
-                <div class="footer-col"><h4>Organization</h4><ul><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="education.html">Education</a></li><li><a href="impact.html">Our Impact</a></li><li><a href="stories.html">Stories</a></li></ul></div>
-                <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="support.html">Donate</a></li><li><a href="support.html">Partner</a></li><li><a href="support.html">Volunteer</a></li><li><a href="contact.html">Contact</a></li><li><a href="news.html">News</a></li></ul></div>
-                <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><i class="fas fa-location-dot"></i><span>Juba, Central Equatoria State, South Sudan</span></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@ccmo.org</span></div><div class="footer-contact-item"><i class="fas fa-phone"></i><span>+211 922 333 444</span></div><div class="footer-contact-item"><i class="fas fa-id-card"></i><span>REG NO 5759 · RRC</span></div></div>
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="CCMO – Coalition for Conflict Mitigation Organization">
+                        <div class="logo-mark">C</div>
+                        <div class="logo-text">
+                            <strong>CCMO</strong>
+                            <span>Coalition · Est. 2022</span>
+                        </div>
+                    </a>
+                    <p>Coalition for Conflict Mitigation Organization — building peace, delivering education, providing clean water, and transforming lives across South Sudan since 2022.</p>
+                    <ul class="footer-social" aria-label="Social media links">
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Organization</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="impact.html">Our Impact</a></li>
+                        <li><a href="stories.html">Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="support.html">Donate</a></li>
+                        <li><a href="support.html">Partner</a></li>
+                        <li><a href="support.html">Volunteer</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <address>
+                        <ul class="footer-contact-list">
+                            <li><i class="fas fa-location-dot" aria-hidden="true"></i> Juba, Central Equatoria State, South Sudan</li>
+                            <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@ccmo-ss.org">info@ccmo-ss.org</a></li>
+                            <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+211922333444">+211 922 333 444</a></li>
+                            <li><i class="fas fa-id-card" aria-hidden="true"></i> REG NO 5759 · RRC</li>
+                        </ul>
+                    </address>
+                </div>
             </div>
-            <div class="footer-bottom"><div>© 2026 Coalition for Conflict Mitigation Organization. All rights reserved.</div><div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Safeguarding</a></div></div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 Coalition for Conflict Mitigation Organization. All rights reserved.</div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Safeguarding</a>
+                </div>
+            </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
+
+
