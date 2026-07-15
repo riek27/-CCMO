@@ -180,6 +180,28 @@ nav.scrolled {
     transition: all 0.3s;
 }
 
+/* Logo image replacing the old circle mark */
+.logo-img {
+    width: 44px;           /* same as old logo-mark size */
+    height: 44px;
+    border-radius: 50%;    /* keeps a circular appearance like before */
+    object-fit: cover;     /* or "contain" if your logo is not square */
+    display: block;
+    flex-shrink: 0;
+    transition: all 0.3s;
+}
+
+/* Hover effect on the whole logo link – subtle */
+.logo:hover .logo-img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Optional: remove the old logo-mark ring effect if you want */
+.logo:hover .logo-img {
+    box-shadow: 0 0 0 4px rgba(15, 61, 46, 0.15);
+}
+
 .logo:hover .logo-mark {
     background: var(--forest-deep);
     transform: scale(1.04);
