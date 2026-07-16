@@ -289,18 +289,85 @@
         <div class="container"><div class="newsletter-inner reveal"><h2>Stay close to the <span class="italic">work</span>.</h2><p>Receive field reports, impact updates, and stories from our communities — delivered with care, never with noise.</p><form class="newsletter-form" onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Thank you ✓';setTimeout(()=>b.textContent='Subscribe',3000);"><input type="email" placeholder="your@email.com" required><button type="submit">Subscribe</button></form></div></div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-mark">C</div><div class="logo-text"><strong>CCMO</strong><span>Coalition · Est. 2022</span></div></a><p>Coalition for Conflict Mitigation Organization — building peace, delivering education, providing clean water, and transforming lives across South Sudan since 2022.</p><div class="footer-social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></div></div>
-                <div class="footer-col"><h4>Organization</h4><ul><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="education.html">Education</a></li><li><a href="impact.html">Our Impact</a></li><li><a href="stories.html">Stories</a></li></ul></div>
-                <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="support.html">Donate</a></li><li><a href="support.html">Partner</a></li><li><a href="support.html">Volunteer</a></li><li><a href="contact.html">Contact</a></li><li><a href="news.html">News</a></li></ul></div>
-                <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><i class="fas fa-location-dot"></i><span>Juba, Central Equatoria State, South Sudan</span></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@ccmo-ss.org</span></div><div class="footer-contact-item"><i class="fas fa-phone"></i><span>+211 922 333 444</span></div><div class="footer-contact-item"><i class="fas fa-id-card"></i><span>REG NO 5759 · RRC</span></div></div>
+   <!-- FOOTER -->
+<footer role="contentinfo">
+    <div class="container">
+        <div class="footer-top">
+            <!-- Brand / About -->
+            <div class="footer-brand">
+                <a href="index.html" class="logo" aria-label="CCMO – Coalition for Conflict Mitigation Organization">
+                    <div class="logo-mark">C</div>
+                    <div class="logo-text">
+                        <strong>CCMO</strong>
+                        <span>Coalition · Est. 2022</span>
+                    </div>
+                </a>
+                <p>Coalition for Conflict Mitigation Organization — building peace, delivering education, providing clean water, and transforming lives across South Sudan since 2022.</p>
+                <ul class="footer-social" aria-label="Social media links">
+                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
-            <div class="footer-bottom"><div>© 2026 Coalition for Conflict Mitigation Organization. All rights reserved.</div><div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Safeguarding</a></div></div>
+
+            <!-- Organization Links -->
+            <div class="footer-col">
+                <h4>Organization</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="impact.html">Our Impact</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                </ul>
+            </div>
+
+            <!-- Get Involved -->
+            <div class="footer-col">
+                <h4>Get Involved</h4>
+                <ul>
+                    <li><a href="support.html">Donate</a></li>
+                    <li><a href="support.html">Partner</a></li>
+                    <li><a href="support.html">Volunteer</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact (updated with new phone numbers) -->
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="footer-contact-item">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>
+                    <span>Juba, Central Equatoria State, South Sudan</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span><a href="mailto:info@ccmo-ss.org">info@ccmo-ss.org</a></span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <span>
+                        <a href="tel:+211922028675">092 202 8675</a> (WhatsApp)<br>
+                        <a href="tel:+211983811166">098 381 1166</a><br>
+                        <a href="tel:+211922529997">092 252 9997</a>
+                    </span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-id-card" aria-hidden="true"></i>
+                    <span>REG NO 5759 · RRC</span>
+                </div>
+            </div>
         </div>
-    </footer>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div>&copy; 2026 Coalition for Conflict Mitigation Organization. All rights reserved.</div>
+            <div>
+            </div>
+        </div>
+    </div>
+</footer>
     <script src="script.js"></script>
 </body>
 </html>
